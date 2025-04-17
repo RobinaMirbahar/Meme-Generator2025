@@ -27,7 +27,7 @@ An AI-powered meme generator with multiple art styles and animation effects, bui
 
 ## Google Colab Access ▶️
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/yourusername/your-repo/blob/main/meme_generator.ipynb](https://colab.research.google.com/drive/1ERUAN61C0Ab3C-2AYwC6a2gT0GFOhE3S#scrollTo=cEZ0bhSQKRzq))
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([[https://colab.research.google.com/github/yourusername/your-repo/blob/main/meme_generator.ipynb](https://colab.research.google.com/drive/1ERUAN61C0Ab3C-2AYwC6a2gT0GFOhE3S#scrollTo=cEZ0bhSQKRzq)](https://colab.research.google.com/drive/1ERUAN61C0Ab3C-2AYwC6a2gT0GFOhE3S#scrollTo=cEZ0bhSQKRzq))
 
 1. Click the "Open in Colab" button above
 2. When prompted, connect to a Google Cloud project with Vertex AI enabled
