@@ -347,16 +347,5 @@ for model in models:
 - Free tier: 1000 images/month (for eligible projects)
 - [Pricing Calculator](https://cloud.google.com/vertex-ai/pricing#generative_ai)
 
----
 
-This section helps users:
-1. Understand the **technical capabilities** of the AI models
-2. Configure **style-specific parameters** correctly
-3. Check **model availability** in their project
-4. Monitor **usage costs**
-
-Would you like me to add any details about:
-- Custom model fine-tuning options?
-- Quality/performance tradeoffs between styles?
-- Regional availability differences?
 
