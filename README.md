@@ -264,4 +264,99 @@ from google.cloud import aiplatform; print('✔️ Colab ready for meme generati
 
 
 
+## AI Models Used 🤖
+
+This application leverages Google Vertex AI's foundation models with specialized configurations:
+
+### 1. **Primary Image Generation Model**
+**Model Name**: `imagegeneration@002`  
+**Publisher**: Google  
+**Capabilities**:
+- Text-to-image generation
+- Style transfer
+- Resolution enhancement
+
+**Technical Specs**:
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| Max Resolution | 1024x1024 | Square aspect ratio |
+| Inference Time | 15-30 sec | Varies by prompt complexity |
+| Supported Styles | 5 predefined | Photo, Cartoon, Art, Watercolor, Cyberpunk |
+
+**Prompt Engineering**:
+```python
+# Example payload to Vertex AI
+{
+  "instances": [
+    {
+      "prompt": "Cyberpunk neon-lit scene of a cat, futuristic, rain, glowing lights, 4K detailed",
+      "negativePrompt": "daylight, sunny, natural lighting, blurry"
+    }
+  ],
+  "parameters": {
+    "sampleCount": 1,
+    "style": "cyberpunk",
+    "guidanceScale": 13  # Strict prompt adherence
+  }
+}
+```
+
+### 2. **Style-Specific Configurations**
+Each style uses the base model with optimized parameters:
+
+| Style | Guidance Scale | Key Prompt Modifiers | Negative Prompts |
+|-------|---------------|-----------------------|------------------|
+| Photo | 12 | "8K UHD, sharp focus, natural lighting" | blurry, cartoon, drawing |
+| Cartoon | 10 | "Pixar-style 3D animation, vibrant colors" | realistic, photo, blurry |
+| Art | 11 | "digital painting, artstation, trending" | photo, blurry, low quality |
+| Watercolor | 9 | "soft edges, artistic composition" | digital, sharp edges |
+| Cyberpunk | 13 | "neon-lit, futuristic, rain, glowing" | daylight, sunny |
+
+### 3. **Model Limitations**
+- **Content Policy**: Filters NSFW content automatically
+- **Max Prompt Length**: 500 characters
+- **Rate Limits**: 60 requests/minute per project
+- **Supported Regions**: `us-central1`, `europe-west4`, `asia-east1`
+
+### Verification Command
+Check available models in your project:
+```python
+from google.cloud import aiplatform_v1
+
+client = aiplatform_v1.ModelServiceClient()
+models = client.list_models(parent=f"projects/{PROJECT_ID}/locations/{LOCATION}")
+
+print("Available models:")
+for model in models:
+    if "imagegeneration" in model.display_name.lower():
+        print(f"- {model.display_name} (ID: {model.name.split('/')[-1]})")
+```
+
+### How to Access
+1. Ensure Vertex AI API is enabled:
+   ```bash
+   !gcloud services enable aiplatform.googleapis.com --project={PROJECT_ID}
+   ```
+2. Verify model availability:
+   ```python
+   !gcloud ai models list --region={LOCATION} --project={PROJECT_ID} | grep imagegeneration
+   ```
+
+### Cost Considerations
+- $0.016 per image (1024x1024)
+- Free tier: 1000 images/month (for eligible projects)
+- [Pricing Calculator](https://cloud.google.com/vertex-ai/pricing#generative_ai)
+
+---
+
+This section helps users:
+1. Understand the **technical capabilities** of the AI models
+2. Configure **style-specific parameters** correctly
+3. Check **model availability** in their project
+4. Monitor **usage costs**
+
+Would you like me to add any details about:
+- Custom model fine-tuning options?
+- Quality/performance tradeoffs between styles?
+- Regional availability differences?
 
