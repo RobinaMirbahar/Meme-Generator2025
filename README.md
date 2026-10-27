@@ -1,5 +1,49 @@
 # Meme-Generator2025
 
+![Engine](https://img.shields.io/badge/Engine-Google_Gemini_2.0-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Hosting](https://img.shields.io/badge/Hosting-Google_Cloud_Run-0F9D58?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Language](https://img.shields.io/badge/Language-Python_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Author](https://img.shields.io/badge/Author-Robina_Mirbahar-EA4335?style=for-the-badge&logo=github&logoColor=white)
+
+> **Author & Architect:** [Robina Mirbahar](https://github.com/RobinaMirbahar) (Google Developer Expert in Cloud & AI)  
+> **Focus:** Next-Gen AI Multimodal Meme Studio Powered by Google Gemini 2.0 & Serverless Google Cloud Run
+
+---
+
+## 🎯 Why I Built Meme Studio 2025 — Cloud-Native Multimodal Edition (Engineering Purpose & Real-World Value)
+
+### 1. ✨ Upgrading to Gemini 2.0 Native Multimodal Understanding
+In this 2025 edition, I upgraded my original meme pipeline to leverage Gemini 2.0's faster multimodal reasoning, visual scene understanding, and multi-style humor presets.
+
+### 2. ☁️ Containerized for One-Command Cloud Run Deployment
+I packaged the application with a production `Dockerfile` so workshops and community events can spin up a live shared URL with scale-to-zero serverless hosting.
+
+### 3. 🎨 Custom Template Upload & Batch Generation
+Users can upload custom event photos or architecture diagrams and generate multiple witty variations simultaneously.
+
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    subgraph Client ["1. Browser Studio"]
+        C_Up["Topic Prompt or Custom Image Upload"]
+        C_Style["Humor Preset (SRE, ML Engineer, Cloud Architect)"]
+    end
+    subgraph CloudRun ["2. Containerized Service on Google Cloud Run"]
+        CR_API["Python Application Server"]
+        CR_Gem["Google Gemini 2.0 Multimodal API"]
+        CR_Render["High-Contrast Text & Watermark Renderer"]
+    end
+    subgraph Out ["3. Export & Share"]
+        O_Download["Downloadable PNG & Social Card"]
+    end
+    C_Up & C_Style --> CR_API --> CR_Gem --> CR_Render --> O_Download
+```
+
+---
+
 # Ultimate Meme Generator 🚀
 
 An AI-powered meme generator with multiple art styles and animation effects, built with Google Cloud Vertex AI and Python.
@@ -367,3 +411,22 @@ for model in models:
 <div align="center">
   <img src="https://raw.githubusercontent.com/RobinaMirbahar/RobinaMirbahar/main/ProfileImages/GithubBanner.svg" alt="Robina Mirbahar Banner" width="100%" />
 </div>
+
+<!-- AUTHOR_SIGNATURE_START -->
+---
+
+## 👩‍💻 About the Author
+
+**Robina Mirbahar — Google Cloud & AI Architect**  
+*Google Developer Expert (GDE) in Cloud & AI • Published Author • Multi-Agent Systems & Serverless GPU Builder*
+
+[![GitHub](https://img.shields.io/badge/GitHub-RobinaMirbahar-181717?style=for-the-badge&logo=github)](https://github.com/RobinaMirbahar)
+[![Medium](https://img.shields.io/badge/Medium-@robinamirbahar-000000?style=for-the-badge&logo=medium)](https://medium.com/@robinamirbahar)
+[![DEV.to](https://img.shields.io/badge/DEV.to-robinamirbahar-0A0A0A?style=for-the-badge&logo=devdotto)](https://dev.to/robinamirbahar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Robina_Mirbahar-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/robina-mirbahar)
+[![GDE Profile](https://img.shields.io/badge/Google_Developer_Expert-Profile-4285F4?style=for-the-badge&logo=google)](https://g.dev/RobinaMirbahar)
+[![YouTube](https://img.shields.io/badge/YouTube-@RobinaMirbahar-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RobinaMirbahar)
+[![X](https://img.shields.io/badge/X-@RobinaMirbahar-000000?style=for-the-badge&logo=x)](https://x.com/RobinaMirbahar)
+[![Amazon Author](https://img.shields.io/badge/Amazon_Book-Cloud_Computing_Voyage-FF9900?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B0D146249R)
+
+<!-- AUTHOR_SIGNATURE_END -->
