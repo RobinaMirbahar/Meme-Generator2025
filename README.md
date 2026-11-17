@@ -71,7 +71,7 @@ An AI-powered meme generator with multiple art styles and animation effects, bui
 
 ## Google Colab Access ▶️
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ERUAN61C0Ab3C-2AYwC6a2gT0GFOhE3S#scrollTo=cEZ0bhSQKRzq)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ERUAN61C0Ab3C-2AYwC6a2gT0GFOhE3S?utm_campaign=deveco_gdemembers&utm_source=deveco#scrollTo=cEZ0bhSQKRzq)
 
 1. Click the "Open in Colab" button above
 2. When prompted, connect to a Google Cloud project with Vertex AI enabled
@@ -87,7 +87,7 @@ An AI-powered meme generator with multiple art styles and animation effects, bui
 ## Setup Instructions ⚙️
 
 1. **Enable APIs**:
-   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Go to [Google Cloud Console](https://console.cloud.google.com/?utm_campaign=deveco_gdemembers&utm_source=deveco)
    - Enable "Vertex AI API" for your project
 
 2. **Authentication**:
@@ -124,7 +124,7 @@ An AI-powered meme generator with multiple art styles and animation effects, bui
 
 2. *API not enabled*:
    - Verify Vertex AI API is enabled in your project
-   - Visit: https://console.cloud.google.com/apis/library/aiplatform.googleapis.com
+   - Visit: https://console.cloud.google.com/apis/library/aiplatform.googleapis.com?utm_campaign=deveco_gdemembers&utm_source=deveco
 
 3. *Image generation fails*:
    - Try a different prompt
@@ -389,7 +389,7 @@ for model in models:
 ### Cost Considerations
 - $0.016 per image (1024x1024)
 - Free tier: 1000 images/month (for eligible projects)
-- [Pricing Calculator](https://cloud.google.com/vertex-ai/pricing#generative_ai)
+- [Pricing Calculator](https://cloud.google.com/vertex-ai/pricing?utm_campaign=deveco_gdemembers&utm_source=deveco#generative_ai)
 
 
 ---
