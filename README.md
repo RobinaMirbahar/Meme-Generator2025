@@ -6,7 +6,8 @@
 ![Author](https://img.shields.io/badge/Author-Robina_Mirbahar-EA4335?style=for-the-badge&logo=github&logoColor=white)
 
 > **Author & Architect:** [Robina Mirbahar](https://github.com/RobinaMirbahar) ([Google Developer Expert in Cloud & AI](https://developers.google.com/profile/u/106918534005910641104?utm_campaign=deveco_gdemembers&utm_source=deveco) · Google Cloud Champion Innovator · Co-Author of [*AI Engineering*](https://www.amazon.com/dp/B0GWCZWCF4))  
-> **Focus:** Next-Gen AI Multimodal Meme Studio Powered by Google Gemini 2.0 & Serverless Google Cloud Run
+> 📚 **Architecture Track:** Multimodal AI Meme Studio on Serverless Google Cloud Run  
+> **Core Stack:** [Google Gemini 2.0 Multimodal API](https://ai.google.dev/gemini-api/docs?utm_campaign=deveco_gdemembers&utm_source=deveco), [Google Cloud Run](https://cloud.google.com/run/docs?utm_campaign=deveco_gdemembers&utm_source=deveco), Python, and Pillow.
 
 ---
 
