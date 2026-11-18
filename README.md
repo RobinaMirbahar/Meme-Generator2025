@@ -40,16 +40,6 @@ flowchart TD
         O_Download["Downloadable PNG & Social Card"]
     end
     C_Up & C_Style --> CR_API --> CR_Gem --> CR_Render --> O_Download
-    style Client fill:#fce7f3,stroke:#db2777,stroke-width:2px,color:#831843
-    style C_Up fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
-    style C_Style fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
-    style Preset fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#581c87
-    style CloudRun fill:#fce7f3,stroke:#db2777,stroke-width:2px,color:#831843
-    style CR_API fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
-    style CR_Gem fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
-    style CR_Render fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#581c87
-    style Out fill:#fce7f3,stroke:#db2777,stroke-width:2px,color:#831843
-    style O_Download fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#1e3a8a
 ```
 
 ---
